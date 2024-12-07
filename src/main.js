@@ -5,7 +5,7 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-import { getCategoryAPI } from './apis/testAPI'
+import { getCategoryAPI } from './apis/layout'
 
 const app = createApp(App)
 
