@@ -9,14 +9,14 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component:Layout,
+      component: Layout,
       children: [
         {
           path: '',
           component: Home
         },
         {
-          path: 'category',
+          path: 'category/:id',
           component: Category
         }
       ]
@@ -26,6 +26,11 @@ const router = createRouter({
       component: Login
     },
   ],
+  scrollBehavior() {
+    return {
+      top: 0
+    }
+  }
 })
 
 export default router
